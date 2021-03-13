@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="850.0" stylesheets="@transfert-data.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ui.transfer.TransferDataController">
+   <children>
+      <Pane id="ap_titlebar" prefHeight="87.0" prefWidth="850.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" layoutX="227.0" layoutY="23.0" prefHeight="42.0" prefWidth="346.0" text="Clergy Transfer Data Entry" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding>
+            </Label>
+         </children>
+      </Pane>
+      <AnchorPane id="ap_content" layoutY="87.0" prefHeight="438.0" prefWidth="850.0" styleClass="white-bg" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="87.0">
+         <children>
+            <TabPane focusTraversable="false" layoutX="31.0" layoutY="36.0" prefHeight="438.0" prefWidth="850.0" styleClass="bg-none" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <tabs>
+                <Tab styleClass="white-bg" text="Clergy Details">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="434.0" prefWidth="792.0">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" layoutX="19.0" layoutY="6.0" prefHeight="42.0" prefWidth="761.0" spacing="10.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="17.0">
+                                 <padding>
+                                    <Insets left="8.0" right="8.0" />
+                                 </padding>
+                                 <children>
+                                    <Label text="Transfer Date">
+                                       <font>
+                                          <Font size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets right="8.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <JFXTextField focusTraversable="false" promptText="2021-08-01">
+                                       <HBox.margin>
+                                          <Insets left="8.0" />
+                                       </HBox.margin>
+                                    </JFXTextField>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" layoutX="20.0" layoutY="55.0" prefHeight="54.0" prefWidth="755.0" spacing="10.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="17.0">
+                                 <padding>
+                                    <Insets left="8.0" right="8.0" />
+                                 </padding>
+                                 <children>
+                                    <Label focusTraversable="false" text="Registration tenure">
+                                       <font>
+                                          <Font size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <ChoiceBox fx:id="registration_tenure" focusTraversable="false" prefHeight="26.0" prefWidth="112.0" />
+                                    <Label focusTraversable="false" layoutX="19.0" layoutY="23.0" text="Registration tenure year">
+                                       <font>
+                                          <Font size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <ChoiceBox fx:id="registration_tenure_year" focusTraversable="false" prefHeight="26.0" prefWidth="100.0" />
+                                    <Label focusTraversable="false" layoutX="276.0" layoutY="23.0" text="Registration number">
+                                       <font>
+                                          <Font size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTextField focusTraversable="false" prefHeight="26.0" prefWidth="101.0" styleClass="jfx-text-field" />
+                                 </children>
+                              </HBox>
+                              <Pane layoutX="24.0" layoutY="113.0" prefHeight="257.0" prefWidth="751.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="17.0">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <children>
+                                    <Label focusTraversable="false" layoutX="14.0" layoutY="26.0" text="Rank">
+                                       <font>
+                                          <Font size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <ChoiceBox fx:id="txt_rank" focusTraversable="false" layoutX="129.0" layoutY="21.0" prefHeight="26.0" prefWidth="230.0" />
+                                    <Label focusTraversable="false" layoutX="14.0" layoutY="70.0" text="Firstname">
+                                       <font>
+                                          <Font size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label focusTraversable="false" layoutX="14.0" layoutY="109.0" text="Lastname">
+                                       <font>
+                                          <Font size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label focusTraversable="false" layoutX="14.0" layoutY="145.0" prefHeight="15.0" prefWidth="77.0" text="Middlename">
+                                       <font>
+                                          <Font size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label focusTraversable="false" layoutX="14.0" layoutY="181.0" prefHeight="15.0" prefWidth="83.0" text="Mobile phone">
+                                       <font>
+                                          <Font size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label focusTraversable="false" layoutX="14.0" layoutY="217.0" prefHeight="15.0" prefWidth="83.0" text="Home Phone">
+                                       <font>
+                                          <Font size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label focusTraversable="false" layoutX="400.0" layoutY="26.0" prefHeight="15.0" prefWidth="55.0" text="Floating">
+                                       <font>
+                                          <Font size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <ChoiceBox fx:id="country_code" focusTraversable="false" layoutX="129.0" layoutY="175.0" prefHeight="26.0" prefWidth="50.0" />
+                                    <ChoiceBox fx:id="country_code1" focusTraversable="false" layoutX="129.0" layoutY="211.0" prefHeight="26.0" prefWidth="50.0" />
+                                    <Label focusTraversable="false" layoutX="400.0" layoutY="71.0" text="Email">
+                                       <font>
+                                          <Font size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label focusTraversable="false" layoutX="400.0" layoutY="117.0" text="Note / Remark">
+                                       <font>
+                                          <Font size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTextField focusTraversable="false" layoutX="129.0" layoutY="65.0" prefHeight="26.0" prefWidth="230.0" promptText="Geoarg Paul" styleClass="jfx-text-field" />
+                                    <JFXTextField focusTraversable="false" layoutX="129.0" layoutY="104.0" prefHeight="26.0" prefWidth="230.0" promptText="Ogoolouwa" styleClass="jfx-text-field" />
+                                    <JFXTextField focusTraversable="false" layoutX="129.0" layoutY="140.0" prefHeight="26.0" prefWidth="230.0" promptText="GP" styleClass="jfx-text-field" />
+                                    <JFXTextField focusTraversable="false" layoutX="185.0" layoutY="175.0" prefHeight="26.0" prefWidth="170.0" promptText="09008872621" styleClass="jfx-text-field" />
+                                    <JFXTextField focusTraversable="false" layoutX="185.0" layoutY="211.0" prefHeight="26.0" prefWidth="170.0" promptText="09088789891" styleClass="jfx-text-field" />
+                                    <JFXTextArea focusTraversable="false" layoutX="514.0" layoutY="104.0" prefHeight="120.0" prefWidth="270.0" />
+                                    <JFXTextField layoutX="514.0" layoutY="65.0" prefHeight="26.0" prefWidth="270.0" />
+                                    <JFXRadioButton focusTraversable="false" layoutX="514.0" layoutY="27.0" styleClass="jfx-radio-button" text="Yes" />
+                                    <JFXRadioButton focusTraversable="false" layoutX="580.0" layoutY="27.0" styleClass="jfx-radio-button" text="No" />
+                                    <JFXTextField focusTraversable="false" layoutX="514.0" layoutY="65.0" prefHeight="26.0" prefWidth="270.0" promptText="something@something.com" styleClass="jfx-text-field" />
+                                 </children>
+                              </Pane>
+                           </children>
+                           <padding>
+                              <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                           </padding>
+                           <styleClass>
+                              <String fx:value="white-bg" />
+                              <String fx:value="bd-color" />
+                           </styleClass>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab styleClass="white-bg" text="Transfer From">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="434.0" prefWidth="792.0">
+                           <children>
+                              <AnchorPane prefHeight="393.0" prefWidth="838.0" styleClass="bd-color" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-1.0">
+                                 <children>
+                                    <Label focusTraversable="false" layoutX="62.0" layoutY="22.0" text="Parish Name" />
+                                    <Label focusTraversable="false" layoutX="62.0" layoutY="98.0" text="Parish Status" />
+                                    <ChoiceBox fx:id="txt_parish_status" focusTraversable="false" layoutX="198.0" layoutY="85.0" prefHeight="26.0" prefWidth="220.0" AnchorPane.leftAnchor="198.0" AnchorPane.rightAnchor="419.0" />
+                                    <Label focusTraversable="false" layoutX="62.0" layoutY="60.0" text="Parish Alias" />
+                                    <Label focusTraversable="false" layoutX="62.0" layoutY="136.0" text="Email Address" />
+                                    <Label focusTraversable="false" layoutX="62.0" layoutY="174.0" text="Address" />
+                                    <Label focusTraversable="false" layoutX="62.0" layoutY="212.0" text="City" />
+                                    <Label focusTraversable="false" layoutX="62.0" layoutY="250.0" text="State / Province" />
+                                    <ChoiceBox fx:id="txt_country" focusTraversable="false" layoutX="198.0" layoutY="313.0" prefHeight="26.0" prefWidth="220.0" AnchorPane.leftAnchor="194.0" AnchorPane.rightAnchor="414.0" />
+                                    <Label focusTraversable="false" layoutX="62.0" layoutY="288.0" text="Zip / Postal Code" />
+                                    <Label focusTraversable="false" layoutX="62.0" layoutY="326.0" text="Country" />
+                                    <ChoiceBox fx:id="txt_state_province" focusTraversable="false" layoutX="198.0" layoutY="237.0" prefHeight="26.0" prefWidth="220.0" AnchorPane.leftAnchor="198.0" AnchorPane.rightAnchor="419.0" />
+                                    <JFXTextField focusTraversable="false" layoutX="198.0" layoutY="9.0" prefHeight="26.0" prefWidth="220.0" promptText="CCC Imeko" />
+                                    <JFXTextField focusTraversable="false" layoutX="198.0" layoutY="47.0" prefHeight="26.0" prefWidth="220.0" promptText="Parish I" />
+                                    <JFXTextField focusTraversable="false" layoutX="198.0" layoutY="123.0" prefHeight="26.0" prefWidth="220.0" promptText="imeko.ccc@gmail.com" />
+                                    <JFXTextField focusTraversable="false" layoutX="198.0" layoutY="161.0" prefHeight="26.0" prefWidth="220.0" promptText="plot 3, oke agbede" />
+                                    <JFXTextField focusTraversable="false" layoutX="198.0" layoutY="199.0" prefHeight="26.0" prefWidth="220.0" promptText="celestial city" />
+                                    <JFXTextField focusTraversable="false" layoutX="198.0" layoutY="275.0" prefHeight="26.0" prefWidth="220.0" promptText="233200" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab styleClass="white-bg" text="Transfer To">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="bd-color">
+                           <children>
+                              <AnchorPane prefHeight="393.0" prefWidth="838.0">
+                                 <children>
+                                    <Label focusTraversable="false" layoutX="62.0" layoutY="22.0" text="Parish Name" />
+                                    <Label focusTraversable="false" layoutX="62.0" layoutY="98.0" text="Parish Status" />
+                                    <ChoiceBox fx:id="txt_parish_status1" focusTraversable="false" layoutX="198.0" layoutY="85.0" prefHeight="26.0" prefWidth="220.0" AnchorPane.leftAnchor="198.0" AnchorPane.rightAnchor="419.0" />
+                                    <Label focusTraversable="false" layoutX="62.0" layoutY="60.0" text="Parish Alias" />
+                                    <Label focusTraversable="false" layoutX="62.0" layoutY="136.0" text="Email Address" />
+                                    <Label focusTraversable="false" layoutX="62.0" layoutY="174.0" text="Address" />
+                                    <Label focusTraversable="false" layoutX="62.0" layoutY="212.0" text="City" />
+                                    <Label focusTraversable="false" layoutX="62.0" layoutY="250.0" text="State / Province" />
+                                    <ChoiceBox fx:id="txt_country1" focusTraversable="false" layoutX="198.0" layoutY="313.0" prefHeight="26.0" prefWidth="220.0" AnchorPane.leftAnchor="194.0" AnchorPane.rightAnchor="414.0" />
+                                    <Label focusTraversable="false" layoutX="62.0" layoutY="288.0" text="Zip / Postal Code" />
+                                    <Label focusTraversable="false" layoutX="62.0" layoutY="326.0" text="Country" />
+                                    <ChoiceBox fx:id="txt_state_province1" focusTraversable="false" layoutX="198.0" layoutY="237.0" prefHeight="26.0" prefWidth="220.0" AnchorPane.leftAnchor="198.0" AnchorPane.rightAnchor="419.0" />
+                                    <JFXTextField focusTraversable="false" layoutX="198.0" layoutY="9.0" prefHeight="26.0" prefWidth="220.0" promptText="CCC Oluwasola Parish" AnchorPane.leftAnchor="198.0" AnchorPane.rightAnchor="420.0" />
+                                    <JFXTextField focusTraversable="false" layoutX="198.0" layoutY="47.0" prefHeight="26.0" prefWidth="220.0" promptText="Oluwa Parish" AnchorPane.leftAnchor="198.0" AnchorPane.rightAnchor="420.0" />
+                                    <JFXTextField focusTraversable="false" layoutX="198.0" layoutY="123.0" prefHeight="26.0" prefWidth="220.0" promptText="something@something.com" AnchorPane.leftAnchor="198.0" AnchorPane.rightAnchor="420.0" />
+                                    <JFXTextField focusTraversable="false" layoutX="198.0" layoutY="161.0" prefHeight="26.0" prefWidth="220.0" promptText="plot 84, Road 4 George Avenue" AnchorPane.leftAnchor="198.0" AnchorPane.rightAnchor="420.0" />
+                                    <JFXTextField focusTraversable="false" layoutX="198.0" layoutY="199.0" prefHeight="26.0" prefWidth="220.0" promptText="Ikeja" AnchorPane.leftAnchor="198.0" AnchorPane.rightAnchor="420.0" />
+                                    <JFXTextField focusTraversable="false" layoutX="198.0" layoutY="275.0" prefHeight="26.0" prefWidth="220.0" promptText="127720" AnchorPane.leftAnchor="198.0" AnchorPane.rightAnchor="420.0" />
+                                 </children>
+                              </AnchorPane>
+                           </children></AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab styleClass="white-bg" text="Duration">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="bd-color">
+                           <children>
+                              <ChoiceBox fx:id="transfer_status" layoutX="312.0" layoutY="153.0" prefHeight="26.0" prefWidth="200.0" AnchorPane.leftAnchor="313.0" AnchorPane.rightAnchor="325.0" />
+                              <Label layoutX="150.0" layoutY="54.0" text="Transfer Beginning" />
+                              <Label layoutX="150.0" layoutY="94.0" text="Transfer Expiry" />
+                              <Label layoutX="150.0" layoutY="129.0" text="Transfer Extended" />
+                              <Label layoutX="150.0" layoutY="166.0" text="Transfer Status" />
+                              <JFXTextField layoutX="312.0" layoutY="41.0" prefHeight="26.0" prefWidth="200.0" promptText="2021-07-12" AnchorPane.leftAnchor="312.0" AnchorPane.rightAnchor="325.0" />
+                              <JFXTextField layoutX="312.0" layoutY="81.0" prefHeight="26.0" prefWidth="200.0" promptText="2025-07-12" AnchorPane.leftAnchor="312.0" AnchorPane.rightAnchor="325.0" />
+                              <JFXTextField layoutX="312.0" layoutY="116.0" prefHeight="26.0" prefWidth="200.0" AnchorPane.leftAnchor="312.0" AnchorPane.rightAnchor="325.0" />
+                           </children></AnchorPane>
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+         <padding>
+            <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+         </padding>
+      </AnchorPane>
+      <HBox alignment="CENTER_RIGHT" layoutX="6.0" layoutY="525.0" prefHeight="69.0" prefWidth="838.0" spacing="10.0" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="6.0">
+         <padding>
+            <Insets left="8.0" right="8.0" />
+         </padding>
+         <children>
+            <JFXButton fx:id="add_btn" onAction="#AddTransfer" prefWidth="150.0" text="Add">
+               <HBox.margin>
+                  <Insets left="12.0" right="12.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="14.0" right="14.0" top="10.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="reset_btn" layoutX="778.0" layoutY="32.0" onAction="#ResetField" prefWidth="150.0" text="Reset">
+               <HBox.margin>
+                  <Insets left="12.0" right="12.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="14.0" right="14.0" top="10.0" />
+               </padding>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

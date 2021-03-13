@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="620.0" style="-fx-background-color: #2C3D4F;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ui.welcome.WelcomeController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="621.0" style="-fx-background-color: #2C3D4F;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="image_logo_view" fitHeight="150.0" fitWidth="200.0" layoutX="210.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../images/undraw_welcome_cats_thqn.png" />
+               </image></ImageView>
+            <Button fx:id="btn_cancel" layoutX="568.0" mnemonicParsing="false" onAction="#cancelButtonAction" style="-fx-background-color: none;">
+               <graphic>
+                  <ImageView fx:id="cancel_btn_imageView" fitHeight="35.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../images/iconfinder_Cancel_728918.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label alignment="CENTER" layoutX="132.0" layoutY="178.0" text="Welcome to Amazing Dashboard" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Garuda" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="136.0" layoutY="265.0" text="New User?" textFill="#228deb">
+               <font>
+                  <Font name="Gayathri Regular" size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="173.0" layoutY="216.0" text="The powerful application manager" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Garuda" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_create_account" alignment="CENTER" focusTraversable="false" layoutX="132.0" layoutY="295.0" mnemonicParsing="false" onAction="#GoToRegistrationAction" prefHeight="45.0" prefWidth="162.0" style="-fx-background-color: #228deb;" text="Create Account" textFill="WHITE">
+               <font>
+                  <Font name="Gayathri Regular" size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="335.0" layoutY="265.0" text="Existing User" textFill="#228deb">
+               <font>
+                  <Font name="Gayathri Regular" size="17.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_login_welcome" alignment="CENTER" focusTraversable="false" layoutX="329.0" layoutY="295.0" mnemonicParsing="false" onAction="#GoToLoginAction" prefHeight="45.0" prefWidth="162.0" style="-fx-background-color: #228deb;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="Gayathri Regular" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

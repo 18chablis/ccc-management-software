@@ -1,0 +1,42 @@
+.jfx-button{
+    -fx-background-color: #42A5F5;
+    -fx-text-fill: white;
+    -fx-focus-color: #00B0FF;
+}
+
+.jfx-button:hover{
+    -fx-background-color: #1565C0;
+}
+
+#ap_titlebar{
+	-fx-background-color: #42A5F5;
+}
+
+#ap_content{
+	-fx-background-color: white;
+}
+
+.white-bg{
+	-fx-background-color: white;
+}
+
+.bg-none{
+	-fx-background: none;
+}
+
+.bd-color{
+	-fx-border-color: #42A5F5;
+}
+
+.jfx-text-field{
+	-jfx-focus-color: #42A5F5;
+	-jfx-unfocus-color: #050505;
+}
+
+.choice-box{
+	-fx-background-color: #F5F5F5;
+}
+
+.jfx-radio-button{
+	-jfx-selected-color: #42A5F5;
+}
